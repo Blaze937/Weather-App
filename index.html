@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background">
+    <div class="overlay">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="location">
+          <span class="location-icon">🗺️</span>
+          <span class="location-text">Noida, Gautam Budh Nagar, Uttar Pradesh</span>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search city..." class="search-input">
+          <button class="profile-btn">🙍🏻</button>
+        </div>
+      </header>
+
+      <!-- Main Weather Section -->
+      <section class="main-weather">
+        <div class="temperature">
+          <div class="temp-value">
+            <span id="current-temp">18</span><span class="unit">°C</span>
+          </div>
+          <div class="temp-range">
+            <div class="temp-box">H<br><span id="temp-high">29°C</span></div>
+            <div class="temp-box">L<br><span id="temp-low">19°C</span></div>
+          </div>
+          <!-- <p id="current-time" class="time">14:25 pm</p> -->
+           <p id="humidity-windSpeed" class="humidity-windSpeed">💦 Humidity 49% <br>
+            💨 19 KMH
+           </p>
+        </div>
+        <div class="description">
+          <h1 id="weather-main">Stormy</h1>
+          <p id="weather-description">with Partly clouds</p>
+        </div>
+      </section>
+
+      <!-- weekly-forcast -->
+      <div class="weekly-forecast">
+        <!-- Forecast Section -->
+        <section class="forecast">
+          <div class="forecast-cards">
+            <div class="forecast-card">
+              <p class="days">Monday</p>
+              <a href="#"><img src="rain.png" alt="weather icon"></a>
+              <p id="temp-days" class="temp-days">❄️ 16°C</p>
+            </div>
+            <div class="forecast-card">
+              <p class="days">Tuesday</p>
+              <a href="#"><img src="cloudsNsun.png" alt="weather icon"></a>
+              <p id="temp-days" class="temp-days">⛅ 20°C</p>
+            </div>
+            <div class="forecast-card">
+              <p class="days">Wednesday</p>
+              <a href="#"><img src="cloudsNsun.png" alt="weather icon"></a>
+              <p id="temp-days" class="temp-days">⛅ 25°C</p>
+
+            </div>
+            <div class="forecast-card active">
+              <p class="days">Thursday</p>
+              <a href="#"><img src="sun.png" alt="weather icon"></a>
+              <p id="temp-days" class="temp-days">☀️ 29°C</p>
+            </div>
+            <div class="forecast-card">
+              <p class="days">Friday</p>
+              <a href="#"><img src="cloudsNsun.png" alt="weather icon"></a>
+              <p id="temp-days" class="temp-days">☁️ 22°C</p>
+            </div>
+            <div class="forecast-card">
+              <p class="days">Saturday</p>
+              <a href="#"><img src="cloudsNsun.png" alt="weather icon"></a>
+              <p id="temp-days" class="temp-days">⛅ 23°C</p>
+            </div>
+            <div class="forecast-card">
+              <p class="days">Sunday</p>
+              <a href="#"><img src="sun.png" alt="weather icon"></a>
+              <p id="temp-days" class="temp-days">☀️ 30°C</p>
+            </div>
+          </div>
+        </section>        
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
